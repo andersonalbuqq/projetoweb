@@ -1,0 +1,113 @@
+<%- include("includes/header"); %>
+
+<div class="container">
+    <h3>Adicionar Contato</h3>
+    <hr />
+
+    <form method="POST" action="/contatos/save">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input
+                type="text"
+                class="form-control"
+                id="nome"
+                name="nome"
+                aria-describedby="emailHelp"
+                placeholder="Insira seu nome"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="celular" class="form-label">Celular</label>
+            <input
+                type="number"
+                class="form-control"
+                id="celular"
+                name="celular"
+                aria-describedby="emailHelp"
+                placeholder="Insira seu celular"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                aria-describedby="emailHelp"
+                placeholder="Insira seu Email"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="rua" class="form-label">Rua</label>
+            <input
+                type="text"
+                class="form-control"
+                id="rua"
+                name="rua"
+                aria-describedby="emailHelp"
+                placeholder="Insira sua rua"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="numero" class="form-label">Numero</label>
+            <input
+                type="number"
+                class="form-control"
+                id="numero"
+                name="numero"
+                aria-describedby="emailHelp"
+                placeholder="Insira o numero da sua residência"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input
+                type="text"
+                class="form-control"
+                id="bairro"
+                name="bairro"
+                aria-describedby="emailHelp"
+                placeholder="Insira seu bairro"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="cidade" class="form-label">Cidade</label>
+            <input
+                type="text"
+                class="form-control"
+                id="cidade"
+                name="cidade"
+                aria-describedby="emailHelp"
+                placeholder="Insira sua cidade"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="estado" class="form-label">Estado</label>
+            <input
+                type="text"
+                class="form-control"
+                id="estado"
+                name="estado"
+                aria-describedby="emailHelp"
+                placeholder="Insira seu estado"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="cep" class="form-label">Cep</label>
+            <input
+                type="text"
+                class="form-control"
+                id="cep"
+                name="cep"
+                aria-describedby="emailHelp"
+                placeholder="Insira seu estado"
+            />
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a href="/contatos" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
+<%- include("includes/footer"); %>
